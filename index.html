@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Filter the table using Search Box</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+<div class="wrapper">
+  <div class="header">
+    <div class="title">
+      Library Management System
+    </div>
+
+    <div class="search_box">
+      <input type="text" id="search_name" placeholder="TITLE">
+    </div>
+    <div class="search_box">
+      <input type="text" id="search_author" placeholder="Author">
+    </div>
+    <div class="search_box">
+      <input type="text" id="search_subject" placeholder="subject">
+    </div>
+    <div class="search_box">
+      <input type="date" id="search_date" placeholder="date">
+    </div>
+
+    <button id="search_button">Search</button>
+
+  </div>
+  <div class="table_wrap">
+    <div class="table_header">
+      <ul>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>TITLE</span>
+            </div>
+            <div class="author">
+              <span>AUTHOR</span>
+            </div>
+            <div class="subject">
+              <span>SUBJECT</span>
+            </div>
+            <div class="date">
+              <span>DATE</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="table_body">
+      <ul>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>The Origin Of Species</span>
+            </div>
+            <div class="author">
+              <span>Charles Darwin</span>
+            </div>
+            <div class="subject">
+              <span>Science</span>
+            </div>
+            <div class="date">
+              <span class="open">02-09-1859</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>College Physics: Volume 1</span>
+            </div>
+            <div class="author">
+              <span>Paul Peter</span>
+            </div>
+            <div class="subject">
+              <span>Physics</span>
+            </div>
+            <div class="date">
+              <span class="reopened">04-08-1997</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>Few Things Left Unsaid</span>
+            </div>
+            <div class="author">
+              <span>Sudeep Nagarkar</span>
+            </div>
+            <div class="subject">
+              <span>Love Story</span>
+            </div>
+            <div class="date">
+              <span class="fixed">05-07-2017</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>The Hunted</span>
+            </div>
+            <div class="author">
+              <span>Gabriel Bergmoser</span>
+            </div>
+            <div class="subject">
+              <span>Horror</span>
+            </div>
+            <div class="date">
+              <span class="closed">03-04-2020</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>The Time Machine</span>
+            </div>
+            <div class="author">
+              <span>HG Wells</span>
+            </div>
+            <div class="subject">
+              <span>Sci-Fi</span>
+            </div>
+            <div class="date">
+              <span class="hold">08-09-2008</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>I Too Had a Love Story</span>
+            </div>
+            <div class="author">
+              <span>Ravinder Singh</span>
+            </div>
+            <div class="subject">
+              <span>Love Story</span>
+            </div>
+            <div class="date">
+              <span class="open">08-09-2005</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>The Elegant Universe</span>
+            </div>
+            <div class="author">
+              <span>Brian Greene</span>
+            </div>
+            <div class="subject">
+              <span>Physics</span>
+            </div>
+            <div class="date">
+              <span class="open">09-07-2011</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>Without a Hitch</span>
+            </div>
+            <div class="author">
+              <span>Asher Fogle Paul</span>
+            </div>
+            <div class="subject">
+              <span>Love Story</span>
+            </div>
+            <div class="date">
+              <span class="canceled">07-05-2002</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>The Journey Beyond 4</span>
+            </div>
+            <div class="author">
+              <span>Exotic Arts</span>
+            </div>
+            <div class="subject">
+              <span>Sci-Fi</span>
+            </div>
+            <div class="date">
+              <span class="fixed">08-02-2017</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>Beyond Einstein</span>
+            </div>
+            <div class="author">
+              <span>Michio kaku</span>
+            </div>
+            <div class="subject">
+              <span>Physics</span>
+            </div>
+            <div class="date">
+              <span class="hold">03-02-1997</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>The Shining</span>
+            </div>
+            <div class="author">
+              <span>Stephen King</span>
+            </div>
+            <div class="subject">
+              <span>Horror</span>
+            </div>
+            <div class="date">
+              <span class="canceled">28-01-1977</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>Frankestein</span>
+            </div>
+            <div class="author">
+              <span>Mary Shelly</span>
+            </div>
+            <div class="subject">
+              <span>Horror</span>
+            </div>
+            <div class="date">
+              <span class="canceled">28-07-1959</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>Neuromancer</span>
+            </div>
+            <div class="author">
+              <span>William Gibson</span>
+            </div>
+            <div class="subject">
+              <span>Sci-Fi</span>
+            </div>
+            <div class="date">
+              <span class="canceled">28-05-1984</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item">
+            <div class="name">
+              <span>Outlander</span>
+            </div>
+            <div class="author">
+              <span>Diana Gabaldon</span>
+            </div>
+            <div class="subject">
+              <span>Love Story</span>
+            </div>
+            <div class="date">
+              <span class="canceled">11-08-1989</span>
+            </div>
+          </div>
+        </li>
+        
+    </div>
+  </div>
+
+<script src="scripts.js"></script>
+
+</div>
+</body>
+</html>
